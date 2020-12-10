@@ -3,14 +3,16 @@ var word = document.createElement('div');
 word.textContent = '시작';
 body.append(word);
 
+var form = document.createElement('form');
+body.append(form);
 var input = document.createElement('input');
-body.append(input);
+form.append(input);
 
 var btn = document.createElement('button');
-body.append(btn);
+form.append(btn);
 btn.textContent = '입력';
 
-body.append(document.createElement('br'));
+// body.append(document.createElement('br'));
 
 var result = document.createElement('result');
 body.append(result);
