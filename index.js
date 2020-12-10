@@ -19,7 +19,8 @@ body.append(result);
 result.textContent = '결과'
 
 //async 
-btn.addEventListener('click', function callback(){
+form.addEventListener('click', function callback(e){
+    e.preventDefault();
     if(word.textContent[word.textContent.length-1] == input.value[0]){
         result.textContent = 'TRUE';
     } else {
