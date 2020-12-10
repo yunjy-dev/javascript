@@ -23,7 +23,10 @@ form.addEventListener('click', function callback(e){
     e.preventDefault();
     if(word.textContent[word.textContent.length-1] == input.value[0]){
         result.textContent = 'TRUE';
+        word.textContent = input.value;
     } else {
         result.textContent = 'FALSE';
     }
+    input.value='';
+    input.focus();
 })
